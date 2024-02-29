@@ -6,7 +6,10 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx", ".css"],
-    alias: { "@/*": path.resolve(__dirname, "/src/*") },
+    // alias: { "@/*": path.resolve(__dirname, "/src/*") },
+    alias: {
+      "@": path.resolve(__dirname, "src/"),
+    },
   },
   // ts시 tsx
   entry: { react_app: "./src/index.tsx" },
