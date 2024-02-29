@@ -53,7 +53,11 @@ module.exports = {
     //     secure: false,
     //   },
     // },
+    // 모든 항목에 대해 gzip 압축 적용
     hot: true,
+    // 새로고침 하지 않아도 변경 모듈 자동 적용
     open: true,
+    // devServer routing 시 에러 해결
+    historyApiFallback: true,
   },
 };
